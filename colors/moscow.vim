@@ -298,6 +298,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" Vim Highlighting
 	call <SID>X("vimCommand", s:foreground, "", "bold")
 	"call <SID>X("LineNr", s:red, "", "bold")
+    
+    " Vim Plug
+    call <SID>X("plugName", s:blue, "", "bold")
 
     " TeX Highlight
     " Основной файл в кором содержатся имена находится по адресу
