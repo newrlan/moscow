@@ -20,7 +20,7 @@ set background=light
 hi clear
 syntax reset
 
-let g:colors_name = "red"
+let g:colors_name = "moscow"
 
 if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" Returns an approximate grey index for the given grey level
@@ -290,6 +290,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Type", s:foreground, "", "")
 	call <SID>X("Typedef", s:foreground, "", "")
 	call <SID>X("Define", s:foreground, "", "")
+	call <SID>X("Delimiter", s:blue, "", "")
 	call <SID>X("Include", s:comment, "", "italic")
 	call <SID>X("Underlined", s:blue, "", "italic")
 	call <SID>X("Error", s:foreground, s:palered, "bold")
@@ -305,11 +306,16 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     " TeX Highlight
     " Основной файл в кором содержатся имена находится по адресу
     " ~/.vim/bundle/vim-tex-syntax/syntax/tex.vim
-    " call <SID>X("texSectionCommands", s:red, "", "bold")
+    " ~/.vim/plugged/vimtex/autoload/vimtex/syntax/core.vim
     call <SID>X("texMath", "", "", "italic")
-    call <SID>X("texSpecialCommands", s:blue, "", "")
-    call <SID>X("texMathCommand", s:blue, "", "")
-    call <SID>X("texMathScripts", s:red, "", "") " _{} and ^{}
+    call <SID>X("texOpt", s:foreground, "", "italic")
+    call <SID>X("texCmd", s:foreground, "", "italic")
+    call <SID>X("texArg", s:blue, "", "bold")
+    call <SID>X("texCmdEnv", s:foreground, "", "bold")
+    call <SID>X("texCmdPart", s:red, "", "bold")
+    call <SID>X("texMathOper", s:foreground, "", "")
+    call <SID>X("texPartArgTitle", s:foreground, "", "bold")
+    call <SID>X("texRefArg", s:red, "", "")
 
 	" C Highlighting
 	call <SID>X("cType", s:foreground, "", "italic")
