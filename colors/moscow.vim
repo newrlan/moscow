@@ -316,6 +316,17 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("texMathOper", s:foreground, "", "")
     call <SID>X("texPartArgTitle", s:foreground, "", "bold")
     call <SID>X("texRefArg", s:red, "", "")
+ 
+	" VimWiki Highlighting
+	call <SID>X("VimwikiListTodo", s:blue, "", "bold")
+	call <SID>X("VimwikiCheckBoxDone", s:comment, "", "italic")
+	call <SID>X("VimwikiHeader1", s:foreground, "", "bold")
+	call <SID>X("VimwikiHeader2", s:foreground, "", "bold")
+	call <SID>X("VimwikiHeader3", s:foreground, "", "bold")
+	call <SID>X("VimwikiHeader4", s:foreground, "", "bold")
+	call <SID>X("VimwikiHeader5", s:foreground, "", "bold")
+	call <SID>X("VimwikiHeader6", s:foreground, "", "bold")
+	call <SID>X("VimwikiHeaderChar", s:red, "", "bold")
 
 	" C Highlighting
 	call <SID>X("cType", s:foreground, "", "italic")
