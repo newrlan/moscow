@@ -4,7 +4,7 @@
 " let s:comment = "a5a9ad"
 let s:comment = "7b7f85"
 let s:line = "f7f8fa"
-let s:background = "edebe9"
+let s:background = "f6f6f6"
 " let s:background = "ffffff"
 let s:foreground = "000000"
 let s:blue = "2962b3"
